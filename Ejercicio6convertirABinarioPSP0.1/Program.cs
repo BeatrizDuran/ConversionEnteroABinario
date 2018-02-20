@@ -17,15 +17,21 @@ namespace Ejercicio6convertirABinarioPSP0._1
             Console.WriteLine("Favor de ingresar el número a convertir:");
             try
             {
+                //Escribir el dato para realizar la comparación
                 num = int.Parse(Console.ReadLine());
+                //Verificar que el dato ingresado anteriormente es menor a cero
                 while (num < 0)
                 {
+                    // Verificar que sea mayor  a cero, si se cumple las dos condiciones se vuelve a 
+                    // ingresar el número
                     while (num > 9)
                     {
                         Console.WriteLine("Favor de ingresar de nuevo el número: ");
                         num = int.Parse(Console.ReadLine());
-                    }
-                }
+                    }// fin while
+                }// fin while
+                // Inicio de las comparaciones con cada numero, dependiendo si es entre el 0 y el nueve
+                // se realiza despliega el resultado en binario.
             if (num == 0)
                 Console.WriteLine("Su número es: " + num + ", en binario: 0000");
             if (num == 1)
@@ -46,11 +52,13 @@ namespace Ejercicio6convertirABinarioPSP0._1
                 Console.WriteLine("Su número es: " + num + ", en binario: 1000");
             if (num == 9)
                 Console.WriteLine("Su número es: " + num + ", en binario: 1001");
-            }
+            }// fin try
+            // Si el usuario ingresa un dato que no sea numerico como letra o decimal se despliega
+            // en pantalla que el formato es incorrecto.
             catch (FormatException error)
             {
                 Console.WriteLine(error.ToString());
-            }
+            } // fin catch
             Console.ReadKey();
         }
     }
