@@ -23,7 +23,7 @@ namespace Ejercicio6convertirABinarioPSP0._1
                 while (num < 0)
                 {
                     // Verificar que sea mayor  a cero, si se cumple las dos condiciones se vuelve a 
-                    // ingresar el número
+                    // ingresar el número.
                     while (num > 9)
                     {
                         Console.WriteLine("Favor de ingresar de nuevo el número: ");
