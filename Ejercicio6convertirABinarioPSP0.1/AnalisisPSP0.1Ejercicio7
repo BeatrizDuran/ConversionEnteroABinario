@@ -1,0 +1,14 @@
+﻿3. Recibir una cantidad de UN ENTERO (UNIDAD DEL 0 - 9) y convertirla a BINARIO	
+    Imprimir el dato decimal y el BINARIO en cuatro cifras (0000).
+
+	REQUISITOS.
+	FUNCIONALES:
+
+	RF01: El programa debe solicitar solo un numero entero del 0 al 9 por parte del usuario.
+	RF02: El programa debe convertir a binario el numero ingresado por el usuario.
+	RF03: El programa debe imprirmir el dato decimal y el binario.
+
+	NO FUNCIONALES:
+
+	RNF01: El programa se ejecutará en visual studio 2017.
+	RNF02: El programa se realizará con el lenguaje de C#.
